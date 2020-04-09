@@ -1,4 +1,9 @@
 @import "vendors/reset.scss";
+@import "config/medias.scss";
+@import "config/global.scss";
+@import "blocs/header.scss";
+@import "blocs/footer.scss";
+@import "blocs/login.scss";
 
 img {
   max-width: 100%;
