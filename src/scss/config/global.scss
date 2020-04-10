@@ -2,11 +2,14 @@
   --maincolor: #6958f6;
   --maindark: #3F32A7;
   --background: #101010;
+  --maindark: #3f32a7;
+  --neutralwhite: #f6f6f6;
 }
 
 body {
   border-left: 18px solid var(--maincolor);
   background-color: var(--background);
 }
+
 
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300;400;500;700;900&display=swap');
