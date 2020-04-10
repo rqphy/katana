@@ -8,3 +8,9 @@
       @content;
     }
 }
+
+@mixin homeLarge {
+  @media (min-width: 960px) {
+    @content;
+  }
+}
