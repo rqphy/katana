@@ -1,0 +1,34 @@
+.headerMobile{
+  background-color: var(--maindark);
+  width: 100%;
+  height: 60px;
+  z-index: 3;
+  position: fixed;
+  bottom: 0;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  .headerMobile__elements{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 14px 0px;
+  }
+  .headerMobile__element{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &:nth-child(1n+2){
+        font-weight: 300;
+        color: rgb(150, 155, 210)
+    }
+    img{
+        width: 20px;
+    }
+    p{
+      padding-top: 6px;
+    }
+    }
+}
+
+
+
