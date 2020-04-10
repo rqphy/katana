@@ -1,4 +1,5 @@
-.headerMobile{
+.headerMobile {
+  opacity: 0;
   background-color: var(--maindark);
   width: 100%;
   height: 60px;
@@ -6,30 +7,30 @@
   position: fixed;
   bottom: 0;
   color: white;
-  font-family: 'Roboto', sans-serif;
-  .headerMobile__elements{
+  font-family: "Roboto", sans-serif;
+  .headerMobile__elements {
     width: 100%;
     display: flex;
     justify-content: space-around;
     padding: 14px 0px;
   }
-  .headerMobile__element{
+  .headerMobile__element {
     display: flex;
     flex-direction: column;
     align-items: center;
-    &:nth-child(1n+2){
-        font-weight: 300;
-        color: rgb(150, 155, 210)
+    &:nth-child(1n + 2) {
+      font-weight: 300;
+      color: rgb(150, 155, 210);
     }
-    img{
-        width: 20px;
+    img {
+      width: 20px;
     }
-    p{
+    p {
       padding-top: 6px;
     }
-    }
+  }
 }
-.header{
+.header {
   display: none;
   position: fixed;
   top: 0;
@@ -38,52 +39,50 @@
   height: 60px;
   background-color: var(--background);
   color: white;
-  .header__elements, .header__element{
+  .header__elements,
+  .header__element {
     display: flex;
   }
-  .header__elements{
-    justify-content: space-between;;
+  .header__elements {
+    justify-content: space-between;
     align-items: center;
     margin: 0px 25px;
     height: 100%;
   }
-  .header__element{
-    &:nth-child(2){
-      font-family: 'Roboto', sans-serif;
+  .header__element {
+    &:nth-child(2) {
+      font-family: "Roboto", sans-serif;
       font-size: 16px;
       width: 75%;
       justify-content: space-around;
-      p:nth-child(1){
+      p:nth-child(1) {
         color: var(--maincolor);
         font-weight: bold;
       }
     }
-    &:nth-child(3){
+    &:nth-child(3) {
       width: 10%;
       justify-content: space-between;
     }
   }
-  .profil{
+  .profil {
     width: 40px;
     height: 40px;
-    background-color:var(--maincolor);
-    border-radius: 100%;;
+    background-color: var(--maincolor);
+    border-radius: 100%;
   }
-  .element__logo{
-    font-family: 'Righteous', cursive;
+  .element__logo {
+    font-family: "Righteous", cursive;
     color: var(--maincolor);
     font-size: 28px;
   }
 }
 
 @include medium {
-  .headerMobile{
+  .headerMobile {
     display: none;
   }
-  .header{
+  .header {
     display: block;
   }
 }
-
-
-

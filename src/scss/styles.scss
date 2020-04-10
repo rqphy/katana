@@ -1,6 +1,8 @@
 @import "vendors/reset.scss";
+
 @import "config/medias.scss";
 @import "config/global.scss";
+
 @import "blocs/header.scss";
 @import "blocs/footer.scss";
 @import "blocs/login.scss";
@@ -8,6 +10,7 @@
 @import "blocs/landing-login.scss";
 @import "blocs/landing-description.scss";
 @import "blocs/home-nav.scss";
+@import "blocs/videosContainer";
 
 img {
   max-width: 100%;
