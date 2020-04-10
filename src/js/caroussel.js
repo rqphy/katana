@@ -7,14 +7,14 @@ const arrowLeftHistory = document.querySelector(
 const containerHistory = document.querySelector(
   ".videosContainer--history .videosContainer__elements"
 );
-
-console.log(arrowRightHistory);
+let position = 0;
 
 arrowRightHistory.addEventListener("click", function () {
-  containerHistory.style.transform = "translateX(-150px)";
-  console.log("nathan");
+  position -= 200;
+  containerHistory.style.transform = `translateX(${position}px)`;
 });
 
 arrowLeftHistory.addEventListener("click", function () {
-  containerHistory.style.transform = "translateX(150px)";
+  position -= -200;
+  containerHistory.style.transform = `translateX(${position}px)`;
 });
