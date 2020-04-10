@@ -1,0 +1,93 @@
+.videosContainer {
+  margin: 40px 40px 40px 20px;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+
+  @include medium {
+    margin-bottom: 60px;
+  }
+  &__title {
+    font-size: var(--smallTextbody);
+    font-weight: bold;
+
+    @include medium {
+      font-size: 20px;
+    }
+  }
+
+  &__elements {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    width: 400%;
+  }
+
+  &__element {
+    position: relative;
+    width: 110px;
+    margin-left: 10px;
+
+    @include medium {
+      width: 220px;
+      margin-left: 20px;
+    }
+  }
+
+  &__cover {
+    width: 105px;
+    height: 150px;
+
+    @include medium {
+      width: auto;
+      height: auto;
+    }
+  }
+
+  &__description {
+    position: absolute;
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    align-items: center;
+    z-index: 2;
+    top: 120px;
+
+    @include medium {
+      top: 250px;
+    }
+  }
+
+  &__infos {
+    margin-left: 8px;
+
+    @include medium {
+      margin-left: 16px;
+    }
+  }
+
+  &__fav {
+    margin-left: 4px;
+
+    @include medium {
+      margin-left: 16px;
+    }
+  }
+  &__name {
+    font-size: 14px;
+    font-weight: bold;
+
+    @include medium {
+      font-size: 16px;
+    }
+  }
+
+  &__season {
+    font-size: 10px;
+    margin-top: 2px;
+
+    @include medium {
+      font-size: 14px;
+    }
+  }
+}
