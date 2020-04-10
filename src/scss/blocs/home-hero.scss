@@ -1,0 +1,44 @@
+.homeBody {
+  border: 0;
+}
+
+.heroMobile {
+  height: 80vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("../assets/homebg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &__search {
+    position: absolute;
+    right: 8%;
+    top: 6%;
+  }
+
+  &__title {
+    margin-top: 6%;
+    color: var(--maincolor);
+    font-family: "Righteous", cursive;
+    font-size: 35px;
+  }
+
+  &__container {
+    width: 90%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__playbutton {
+    background-image: url("../assets/play.svg");
+    height: 70px;
+    width: 70px;
+  }
+}
