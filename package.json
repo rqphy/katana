@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "parcel src/index.html",
     "build": "parcel build src/index.hmtl",
+    "sass": "node-sass -w src/scss -o src/css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,5 +23,8 @@
   "devDependencies": {
     "parcel": "^1.12.4",
     "sass": "^1.26.3"
+  },
+  "dependencies": {
+    "node-sass": "^4.13.1"
   }
 }
