@@ -27,9 +27,24 @@
         $signupOK = FALSE;
 
         if(isset($_POST["submit"])){
-        if($_POST['email'] == NULL OR $_POST['password'] == NULL OR $_POST['confirmpassword'] == NULL){
+        if($_POST['email'] == NULL OR $_POST['password'] == NULL OR $_POST['confirmpassword'] == NULL OR $_POST['password'] != $_POST['confirmpassword'] ){
             $error = TRUE;
-            $error_message = "oe mec c po bon !";
+            if ($_POST['email'] == NULL AND $error) {
+              $error = false;
+              printf('Please complete your Email');
+            }
+            if ( $_POST['password'] == NULL AND $error) {
+              $error = false;
+              printf('Please complete your Password');
+            }
+            if ($_POST['confirmpassword'] == NULL AND $error) {
+              $error = false;
+              printf('Please confirm your Password');
+            }
+            if ($_POST['password'] != $_POST['confirmpassword'] AND $error) {
+              $error = false;
+              printf('Passwords are different');
+            }
           }              
          else {
           $statement = 'INSERT INTO `member` (`email`, `pass`) VALUES(:email, :pwd)';
@@ -45,13 +60,9 @@
    
         }
       }
-    
-        if($error == TRUE){
-          printf($error_message);
-         }
 
         if($signupOK == TRUE) {
-          header('Location: ../pages/login.html');
+          header('Location: ../pages/login.php');
         }
    
      
@@ -96,7 +107,7 @@
         />
       </div>
       <input name="submit" type="submit" class="login__button" value="Sign up"></input>
-      <a href="#" class="login__register">I already have my account</a>
+      <a href="../pages/login.php" class="login__register">I already have my account</a>
   </form>
     <footer class="footer">ENG</footer>
 

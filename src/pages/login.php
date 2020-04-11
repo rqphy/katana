@@ -13,8 +13,6 @@
 session_start();
  $dbh = new PDO('mysql:dbname=katana;host=127.0.0.1', 'root', '');
 
-  $email = $_POST['email'];
-  $pass = md5($_POST['password']);
 
   $result = 'SELECT * FROM member';
   $query = $dbh->prepare($result);
@@ -23,13 +21,24 @@ session_start();
 
 
 if(isset($_POST['signin'])) {
-
-  
+  $email = $_POST['email'];
+  $pass = md5($_POST['password']);
+  $emailfind = false;
+  $passfind = false;
   while($data = $query->fetch()) {
     if ($email == $data['email']) {
-      printf('ok mec');
-    } 
-}
+      $emailfind = true;
+      if ($pass == $data['pass']) {
+        $passfind = true;
+        header('Location: ../pages/home.html');
+      }
+    }
+  }if (!$emailfind) {
+    printf("Invalid email");
+  }
+  if (!$passfind) {
+    printf("Invalid password");
+  }
 }
 
 
