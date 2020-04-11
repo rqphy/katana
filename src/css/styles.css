@@ -205,6 +205,9 @@ body {
   .login__register {
     color: white;
     font-size: 12px; }
+    @media (min-width: 667px) {
+      .login__register {
+        font-size: 16px; } }
 
 .footer {
   color: white;

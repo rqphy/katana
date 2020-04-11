@@ -95,7 +95,7 @@
           max="30"
         />
       </div>
-      <input name="submit" type="submit" class="login__button">Sign up</input>
+      <input name="submit" type="submit" class="login__button" value="Sign up"></input>
       <a href="#" class="login__register">I already have my account</a>
   </form>
     <footer class="footer">ENG</footer>

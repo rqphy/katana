@@ -8,11 +8,40 @@
     <link rel="stylesheet" href="../css/styles.css" />
   </head>
   <body class="container">
-    <section class="login">
-      <div class="login__logo">Katana</div>
+
+<?php 
+session_start();
+ $dbh = new PDO('mysql:dbname=katana;host=127.0.0.1', 'root', '');
+
+  $email = $_POST['email'];
+  $pass = md5($_POST['password']);
+
+  $result = 'SELECT * FROM member';
+  $query = $dbh->prepare($result);
+
+  $query->execute();
+
+
+if(isset($_POST['signin'])) {
+
+  
+  while($data = $query->fetch()) {
+    if ($email == $data['email']) {
+      printf('ok mec');
+    } 
+}
+}
+
+
+
+?>
+
+    <form method="POST" action="login.php" class="login">
+      <div class="login__logo">katana</div>
       <div class="login__input">
         <label for="mail" class="login__label">Email</label>
         <input
+        name="email"
           type="email"
           class="login__enter"
           placeholder="akabanekarma@gmail.com"
@@ -23,18 +52,19 @@
       <div class="login__input">
         <label for="mail" class="login__label">Password</label>
         <input
-          type="email"
+        name="password"
+          type="password"
           class="login__enter"
           placeholder="*************"
           min="3"
           max="30"
         />
       </div>
-      <div class="login__button">Sign in</div>
-      <a href="../pages/signup.html" class="login__register"
+      <input type="submit" name="signin" value="Sign in" class="login__button"></input>
+      <a href="../pages/signup.php" class="login__register"
         >Create an account</a
       >
-    </section>
+</form>
     <footer class="footer">ENG</footer>
   </body>
 </html>
