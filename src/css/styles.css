@@ -133,6 +133,7 @@ table {
   --background: #101010;
   --maindark: #3f32a7;
   --neutralwhite: #f6f6f6;
+  --neutralgrey: #cccccc;
   --smallTextbody: 14px; }
 
 body {
@@ -638,6 +639,137 @@ body {
     .videosContainer__arrow--right {
       position: absolute;
       right: 0; }
+
+:root {
+  --icondim: 30px; }
+
+.playerBody {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  border: none; }
+
+.player {
+  max-height: 100%;
+  width: 100%;
+  position: relative;
+  cursor: none; }
+  .player__video {
+    width: 100%;
+    height: 100%; }
+  .player__leave {
+    font-family: "Roboto", sans-serif;
+    font-size: 24;
+    font-weight: 900;
+    position: absolute;
+    top: 3%;
+    left: 3%;
+    color: var(--neutralwhite);
+    z-index: 3;
+    text-decoration: none;
+    display: none; }
+
+.controller {
+  bottom: 5%;
+  left: 5%;
+  position: absolute;
+  z-index: 3;
+  width: 90%;
+  height: 5%;
+  opacity: 0;
+  transition: opacity 0.2s ease-in;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
+  .controller--visible {
+    opacity: 1; }
+  .controller__fullscreen {
+    height: var(--icondim);
+    width: var(--icondim); }
+  .controller__play {
+    width: var(--icondim);
+    height: var(--icondim); }
+  .controller__playing, .controller__pausing {
+    height: 100%;
+    width: 100%;
+    display: none; }
+  .controller__backTen, .controller__forTen {
+    width: var(--icondim);
+    height: var(--icondim); }
+  .controller__timeBar {
+    width: calc(60% + 18px);
+    height: var(--icondim);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center; }
+  .controller__timeBackground {
+    width: calc(100% - 9px);
+    height: 10px;
+    position: absolute;
+    left: 9px;
+    top: calc(50%-5px);
+    background: var(--neutralgrey);
+    border-radius: 5px; }
+  .controller__progressBar {
+    width: 100%;
+    height: 10px;
+    transform: translateX(-100%);
+    background-color: var(--maincolor);
+    border-radius: 5px; }
+  .controller__bouboule {
+    width: 18px;
+    height: 18px;
+    background-color: var(--maincolor);
+    position: absolute;
+    top: calc(50% -9px);
+    border-radius: 50%;
+    z-index: 5; }
+  .controller__currentTime, .controller__totalTime {
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-weight: 700; }
+  .controller__volume {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    height: 30px; }
+    .controller__volume:hover {
+      height: 150px;
+      transform: translateY(calc(-2 * var(--icondim)));
+      justify-content: space-between; }
+      .controller__volume:hover .controller__volumeBar {
+        display: block; }
+  .controller__volumeBar {
+    -webkit-appearance: none;
+    width: 10px;
+    height: 100px;
+    background-color: var(--neutralgrey);
+    outline: none;
+    border-radius: 5px;
+    display: none; }
+  .controller__volumeBar::-webkit-slider-thumb, .controller__volumeBar::-moz-range-thumb {
+    appearance: none;
+    border: none;
+    border-radius: 50%;
+    height: 14px;
+    width: 14px;
+    cursor: pointer;
+    background-color: var(--maincolor); }
+
+.icon {
+  cursor: pointer; }
+
+.visible {
+  cursor: auto;
+  opacity: 1;
+  display: block; }
 
 img {
   max-width: 100%; }
