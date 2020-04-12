@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="../js/userSettings.js" defer></script>
+
     <link rel="stylesheet" href="../scss/styles.scss" />
     <link rel="stylesheet" href="../css/styles.css" />
   </head>
@@ -20,7 +20,7 @@
       <section class="user__settings">
         <article class="user__setting">
           <div class="user__account">
-            <form method="POST" action="user.php">
+            <form class="user__form" method="POST" action="user.php">
               <div class="user__input">
                 <label class="user__label" for="username">Username</label>
                 <input name="username" class="user__enter" value="test" type="text" readonly />
@@ -80,5 +80,6 @@
         <img src="../assets/svg/logout.svg" alt="logout" />
       </div>
     </section>
+    <script type="text/javascript" src="../js/userSettings.js"></script>
   </body>
 </html>
