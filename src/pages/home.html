@@ -9,23 +9,23 @@
     <script defer src="../js/caroussel.js"></script>
   </head>
   <body class="homeBody">
-    <div class="header">
+    <nav class="header">
       <div class="header__elements">
-        <div class="header__element">
-          <p class="element__logo">katana</p>
-        </div>
-        <div class="header__element">
-          <p>HOME</p>
-          <p>ANIMES</p>
-          <p>ANIMATED FILM</p>
-          <p>FAVORITES</p>
-        </div>
-        <div class="header__element">
-          <img src="../assets/search.svg" alt="IconSearch" />
-          <div class="profil"></div>
-        </div>
+        <ul class="header__element">
+          <li class="element__logo">katana</li>
+        </ul>
+        <ul class="header__element">
+          <li> <a href="home.html" class="active">HOME</a></li>
+          <li> <a href="anims.html">ANIMES</a></li>
+          <li> <a href="movies.html">ANIMATED FILM</a></li>
+          <li> <a href="#">FAVORITES</a></li>
+        </ul>
+        <ul class="header__element">
+          <li><img class="header__search"src="../assets/search.svg" alt="IconSearch" /></li>
+          <li> <div class="profil"></div></li>
+        </ul>
       </div>
-    </div>
+    </nav>
     <section class="heroMobile">
       <h1 class="heroMobile__title">Katana</h1>
       <svg
@@ -116,26 +116,26 @@
         <div class="heroMedium__arrow heroMedium__arrow--right">></div>
       </div>
     </section>
-    <div class="headerMobile">
-      <div class="headerMobile__elements">
-        <div class="headerMobile__element">
+    <nav class="headerMobile">
+      <ul class="headerMobile__elements">
+        <li class="headerMobile__element">
           <img src="../assets/home-run.svg" alt="HomeSvgIcon" />
-          <p>Home</p>
-        </div>
-        <div class="headerMobile__element">
+          <a class="active" href="home.html">Home</a>
+        </li>
+        <li class="headerMobile__element">
           <img src="../assets/book.svg" alt="HomeSvgIcon" />
-          <p>Anime</p>
-        </div>
-        <div class="headerMobile__element">
+          <a href="anims.html">Anime</a>
+        </li>
+        <li class="headerMobile__element">
           <img src="../assets/heart.svg" alt="HomeSvgIcon" />
-          <p>Favorite</p>
-        </div>
-        <div class="headerMobile__element">
+          <a href="#">Favorite</a>
+        </li>
+        <li class="headerMobile__element">
           <img src="../assets/user.svg" alt="HomeSvgIcon" />
-          <p>Account</p>
-        </div>
-      </div>
-    </div>
+          <a href="user.html">Account</a>
+        </li>
+      </ul>
+    </nav>
 
     <section class="videosContainer videosContainer--history">
       <h1 class="videosContainer__title">MY HISTORY</h1>

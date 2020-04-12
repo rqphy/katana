@@ -1,0 +1,90 @@
+.headerMobile {
+  background-color: var(--maindark);
+  width: 100%;
+  height: 60px;
+  z-index: 3;
+  position: fixed;
+  bottom: 0;
+  color: white;
+  .headerMobile__elements {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 14px 0px;
+  } 
+  .headerMobile__element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+      width: 20px;
+    }
+    a {
+      padding-top: 6px;
+      color: rgb(150, 155, 210);
+    }
+    .active{
+      color: white;
+      font-weight: 500;
+    }
+  }
+}
+
+.header {
+  display: none;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  width: 100%;
+  height: 60px;
+  background-color: var(--background);
+  color: white;
+  .header__elements,
+  .header__element {
+    display: flex;
+  }
+  .header__elements {
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 25px;
+    height: 100%;
+  }
+  .header__element {
+    &:nth-child(2) {
+      font-size: 16px;
+      width: 75%;
+      justify-content: space-around;
+    }
+    &:nth-child(3) {
+      width: 10%;
+      justify-content: space-between;
+    }
+    .active {
+      color: var(--maincolor);
+      font-weight: bold;
+    }
+  }
+  .profil {
+    width: 40px;
+    height: 40px;
+    background-color: var(--maincolor);
+    border-radius: 100%;
+  }
+  .element__logo {
+    font-family: "Righteous", cursive;
+    color: var(--maincolor);
+    font-size: 28px;
+  }
+  .header__search{
+    margin-top: 10.5px;
+  }
+}
+
+@include medium {
+  .headerMobile {
+    display: none;
+  }
+  .header {
+    display: block;
+  }
+}
