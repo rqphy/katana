@@ -15,6 +15,10 @@
   background-position: center;
   background-size: cover;
 
+  @include medium {
+    display: none;
+  }
+
   &__search {
     position: absolute;
     right: 8%;
@@ -40,10 +44,6 @@
     background-image: url("../assets/play.svg");
     height: 70px;
     width: 70px;
-  }
-
-  @include medium {
-    display: none;
   }
 }
 

@@ -1,11 +1,74 @@
+<!-- <?php /* session_start();
+ $dbh = new PDO('mysql:dbname=katana;host=127.0.0.1', 'root', ''); */
+?>  -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>katana - user</title>
     <link rel="stylesheet" href="../scss/styles.scss" />
     <link rel="stylesheet" href="../css/styles.css" />
   </head>
-  <body></body>
+  <body>
+    <!-- <?php 
+/* if(isset($_SESSION['email'])){
+  */
+?>  -->
+
+    <div class="header">
+      <div class="header__elements">
+        <div class="header__element">
+          <p class="element__logo">katana</p>
+        </div>
+        <div class="header__element">
+          <p>HOME</p>
+          <p>ANIMES</p>
+          <p>ANIMATED FILM</p>
+          <p>FAVORITES</p>
+        </div>
+        <div class="header__element">
+          <img src="../assets/search.svg" alt="IconSearch" />
+          <div class="profil"></div>
+        </div>
+      </div>
+    </div>
+    <div class="headerMobile">
+      <div class="headerMobile__elements">
+        <div class="headerMobile__element">
+          <img src="../assets/home-run.svg" alt="HomeSvgIcon" />
+          <p>Home</p>
+        </div>
+        <div class="headerMobile__element">
+          <img src="../assets/book.svg" alt="HomeSvgIcon" />
+          <p>Anime</p>
+        </div>
+        <div class="headerMobile__element">
+          <img src="../assets/heart.svg" alt="HomeSvgIcon" />
+          <p>Favorite</p>
+        </div>
+        <div class="headerMobile__element">
+          <img src="../assets/user.svg" alt="HomeSvgIcon" />
+          <p>Account</p>
+        </div>
+      </div>
+    </div>
+
+    <section class="user">
+      <nav class="userNav">
+        <ul>
+          <li>Account setting</li>
+          <li>Account setting</li>
+        </ul>
+      </nav>
+    </section>
+
+    <!-- <?php 
+    
+   /* } else{
+      printf('connecte toi gro');
+    }*/
+    ?> -->
+  </body>
 </html>

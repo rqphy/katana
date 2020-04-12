@@ -5,8 +5,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Katana - Signup</title>
-    <!-- <link rel="stylesheet" href="../scss/styles.scss" /> -->
     <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../scss/styles.scss" />
+
   </head>
   <body class="container">
 
