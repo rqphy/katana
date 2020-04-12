@@ -18,3 +18,21 @@ account.addEventListener("click", () => {
   sub.classList.remove("active");
   account.classList.add("active");
 });
+
+
+
+const input = document.querySelectorAll(".user__input")
+const modif = document.querySelectorAll(".user__modif")
+const enter = document.querySelectorAll(".user__enter")
+
+
+for (let i = 0; i < modif.length; i++) {
+  modif[i].addEventListener('click',function () {
+    for (let j = 0; j < modif.length; j++) {
+      input[j].classList.remove("change")
+      enter[j].setAttribute('readonly', 'readonly');;
+    }
+    input[i].classList.add("change")
+    enter[i].removeAttribute('readonly');
+  });
+}
