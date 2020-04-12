@@ -1,76 +1,77 @@
-.landingDescription{
-    display: flex;
-    flex-direction: column;
-    color: white;
+.landingDescription {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+  margin: 0 8%;
+
+  .landingDescription__anime {
+    position: relative;
     text-align: center;
-    margin: 0 8%;
-    .landingDescription__anime{
-      position: relative;
-      text-align: center;
-      margin: 20px auto;
-    }
-    .text__paragraph{
-      display: none;
-    }
-    .text__subtitle{
-      font-weight: bold;
-      font-size: 20px;
-      padding: 20px;
-    }
-    .landingDescription__img{
-      width: 70%;
-    }
-    .landingDescription__div{
-      background-color: var(--maincolor);
-      position: absolute;
-      z-index: -1;
-      width: 100%;
-      height: 150px;
-    }
-  @include medium{
-    .text__subtitle{
+    margin: 20px auto;
+  }
+  .text__paragraph {
+    display: none;
+  }
+  .text__subtitle {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px;
+  }
+  .landingDescription__img {
+    width: 70%;
+  }
+  .landingDescription__div {
+    background-color: var(--maincolor);
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 150px;
+  }
+  @include medium {
+    .text__subtitle {
       font-size: 24px;
     }
-    .landingDescription__div{
+    .landingDescription__div {
       height: 200px;
     }
   }
-  @include large{
-    .anime__text{
+  @include large {
+    .anime__text {
       padding: 0px 30px;
     }
-    .text__paragraph{
+    .text__paragraph {
       display: block;
-      font-size: 20px;
+      font-size: 16px;
+      line-height: 26px;
     }
-    .text__subtitle{
+    .text__subtitle {
       font-size: 30px;
       padding: 40px 0px;
     }
     .landingDescription__img {
       width: 35%;
     }
-    .landingDescription__anime{
+    .landingDescription__anime {
       margin: inherit;
       text-align: left;
       display: flex;
       width: 60%;
-      &:nth-child(1){
-       flex-direction: row-reverse;
-       .landingDescription__div{
-         left: 0;
-       }
+      &:nth-child(1) {
+        flex-direction: row-reverse;
+        .landingDescription__div {
+          left: 0;
+        }
       }
-      &:nth-child(2n){
-       margin-left: 40%;
-       .landingDescription__div{
-        right: 0;
+      &:nth-child(2n) {
+        margin-left: 40%;
+        .landingDescription__div {
+          right: 0;
         }
       }
     }
-    .landingDescription__div{
+    .landingDescription__div {
       width: 60%;
-
     }
   }
 }

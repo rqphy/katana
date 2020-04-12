@@ -140,9 +140,15 @@ body {
   border-left: 18px solid var(--maincolor);
   background-color: var(--background);
   color: var(--neutralwhite);
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+  font-size: 14px; }
+  @media (min-width: 667px) {
+    body {
+      font-size: 16px; } }
 
-
+a {
+  text-decoration: none;
+  color: var(--neutralwhite); }
 
 .headerMobile {
   background-color: var(--maindark);
@@ -152,7 +158,6 @@ body {
   position: fixed;
   bottom: 0;
   color: white; }
-
   .headerMobile .headerMobile__elements {
     width: 100%;
     display: flex;
@@ -162,7 +167,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center; }
-
     .headerMobile .headerMobile__element img {
       width: 20px; }
     .headerMobile .headerMobile__element a {
@@ -171,7 +175,6 @@ body {
     .headerMobile .headerMobile__element .active {
       color: white;
       font-weight: 500; }
-
 
 .header {
   display: none;
@@ -191,7 +194,6 @@ body {
     margin: 0px 25px;
     height: 100%; }
   .header .header__element:nth-child(2) {
-
     font-size: 16px;
     width: 75%;
     justify-content: space-around; }
@@ -201,7 +203,6 @@ body {
   .header .header__element .active {
     color: var(--maincolor);
     font-weight: bold; }
-
   .header .profil {
     width: 40px;
     height: 40px;
@@ -211,10 +212,8 @@ body {
     font-family: "Righteous", cursive;
     color: var(--maincolor);
     font-size: 28px; }
-
   .header .header__search {
     margin-top: 10.5px; }
-
 
 @media (min-width: 667px) {
   .headerMobile {
@@ -543,7 +542,8 @@ body {
       padding: 0px 30px; }
     .landingDescription .text__paragraph {
       display: block;
-      font-size: 20px; }
+      font-size: 16px;
+      line-height: 26px; }
     .landingDescription .text__subtitle {
       font-size: 30px;
       padding: 40px 0px; }
@@ -564,7 +564,6 @@ body {
           right: 0; }
     .landingDescription .landingDescription__div {
       width: 60%; } }
-
 
 .videosContainer {
   margin: 40px 40px 40px 20px;
