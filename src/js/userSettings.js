@@ -14,7 +14,7 @@ sub.addEventListener("click", () => {
 });
 
 account.addEventListener("click", () => {
-  container.style.transform = `translateX(${width}px)`;
+  container.style.transform = "translateX(0px)";
   sub.classList.remove("active");
   account.classList.add("active");
 });
