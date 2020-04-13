@@ -14,7 +14,7 @@ session_start();
  $dbh = new PDO('mysql:dbname=katana;host=127.0.0.1', 'root', '');
 
 
-  $result = 'SELECT * FROM member';
+    
   $query = $dbh->prepare($result);
 
   $query->execute();
@@ -28,7 +28,7 @@ if(isset($_POST['signin'])) {
 
   $emailfind = false;
   $passfind = false;
-  while($data = $query->fetch()) {
+  while($data = $query->fetch ()) {
     if ($email == $data['email']) {
       $emailfind = true;
       if ($pass == $data['pass']) {

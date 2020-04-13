@@ -58,22 +58,23 @@ $dbh = new PDO('mysql:dbname=katana;host=127.0.0.1', 'root', '');
    $path = $path . basename( $_FILES['uploaded_file']['name']);
 
    if(move_uploaded_file($_FILES['uploaded_file']['tmp_name'], $path)) {
-    /* echo "The file ".  basename( $_FILES['uploaded_file']['name']). 
-     " has been uploaded"; */
+    echo "The file ".  basename( $_FILES['uploaded_file']['name']). 
+     " has been uploaded";
 
-     $statement2 = 'INSERT INTO `member` (`picture`) VALUES(:img)';
-     $query = $dbh->prepare($statement2 );
-
-     $query->BindValue(':img', basename( $_FILES['uploaded_file']['name']));
-     $query->execute();
-
+     $request3 = $dbh->prepare('UPDATE member SET picture = ? WHERE email = ?');
+     $request3->execute([
+      basename( $_FILES['uploaded_file']['name']),
+      $_SESSION['email']
+    ]); 
    } else{
        echo "There was an error uploading the file, please try again!";
    }
+   $picture = $_FILES['uploaded_file'];
+   echo  $picture;
  }
- 
  ?>
  
+ <img src="../assets/uploads/<?php $picture?>">
     <section class="user">
       <nav class="user__nav">
         <ul class="user__categories">
@@ -81,7 +82,6 @@ $dbh = new PDO('mysql:dbname=katana;host=127.0.0.1', 'root', '');
           <li id="sub">My Subscription</li>
         </ul>
       </nav>
-
       <section class="user__settings">
         <article class="user__setting">
           <div class="user__account">
