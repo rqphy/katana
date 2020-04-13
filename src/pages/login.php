@@ -23,7 +23,6 @@ session_start();
 if(isset($_POST['signin'])) {
   $email = $_POST['email'];
   $pass = md5($_POST['password']);
-  $pass2 = $_POST['password'];
 
 
   $emailfind = false;
@@ -33,9 +32,8 @@ if(isset($_POST['signin'])) {
       $emailfind = true;
       if ($pass == $data['pass']) {
         $passfind = true;
-        $_SESSION['email'] = $_POST['email'];
-        $_SESSION['pass'] = md5($pass2);
-
+        $_SESSION['email'] = $_POST['email'];;
+        $_SESSION['picture']= $data['picture'];
         header('Location: ../pages/home.php');
       }
     }
