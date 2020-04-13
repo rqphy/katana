@@ -34,7 +34,7 @@
     justify-content: center;
     width: 100%;
   }
- 
+
   &__input {
     position: relative;
     display: flex;
@@ -97,6 +97,8 @@
       z-index: 2;
     }
   }
+
+
 
   .change {
     .user__label {

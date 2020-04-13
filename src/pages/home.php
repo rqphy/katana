@@ -1,3 +1,7 @@
+<?php 
+ $dbh = new PDO('mysql:dbname=katana;host=127.0.0.1', 'root', '');
+ ?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8,7 +12,16 @@
     <link rel="stylesheet" href="../css/styles.css" />
     <script defer src="../js/caroussel.js"></script>
   </head>
+
+
+  <?php 
+  session_start();
+    
+      if(isset($_SESSION['email'])) {
+     
+ ?>
   <body class="homeBody">
+ 
     <nav class="header">
       <div class="header__elements">
         <ul class="header__element">
@@ -1830,5 +1843,15 @@
         </div>
       </div>
     </section>
+ <?php
+      } 
+      else {
+       // header('Location: /index.html')
+       printf('dhsksh');
+      }
+ 
+ ?>
+ 
+    
   </body>
 </html>

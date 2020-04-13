@@ -23,6 +23,9 @@ session_start();
 if(isset($_POST['signin'])) {
   $email = $_POST['email'];
   $pass = md5($_POST['password']);
+  $pass2 = $_POST['password'];
+
+
   $emailfind = false;
   $passfind = false;
   while($data = $query->fetch()) {
@@ -30,7 +33,10 @@ if(isset($_POST['signin'])) {
       $emailfind = true;
       if ($pass == $data['pass']) {
         $passfind = true;
-        header('Location: ../pages/home.html');
+        $_SESSION['email'] = $_POST['email'];
+        $_SESSION['pass'] = md5($pass2);
+
+        header('Location: ../pages/home.php');
       }
     }
   }if (!$emailfind) {
