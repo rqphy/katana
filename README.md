@@ -1,5 +1,5 @@
 # katana
 School project - video / movie platform
 
-Maëva WOLFF 
-Nathan STAMPFLI
+-Maëva WOLFF </br>
+-Nathan STAMPFLI
