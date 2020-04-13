@@ -35,7 +35,9 @@
         </ul>
         <ul class="header__element">
           <li><img class="header__search"src="../assets/search.svg" alt="IconSearch" /></li>
-          <li> <div class="profil"></div></li>
+          <li>
+            <a href="user.php"><div class="profil"></div></a>
+          </li>
         </ul>
       </div>
     </nav>

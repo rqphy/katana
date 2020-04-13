@@ -73,6 +73,45 @@ $dbh = new PDO('mysql:dbname=katana;host=127.0.0.1', 'root', '');
    echo  $picture;
  }
  ?>
+
+<nav class="header">
+      <div class="header__elements">
+        <ul class="header__element">
+          <li class="element__logo">katana</li>
+        </ul>
+        <ul class="header__element">
+          <li> <a href="home.php">HOME</a></li>
+          <li> <a href="anims.html">ANIMES</a></li>
+          <li> <a href="movies.html">ANIMATED FILM</a></li>
+          <li> <a href="#">FAVORITES</a></li>
+        </ul>
+        <ul class="header__element">
+          <li><img class="header__search"src="../assets/search.svg" alt="IconSearch" /></li>
+          <li> <div class="profil"></div></li>
+        </ul>
+      </div>
+    </nav>
+    <nav class="headerMobile">
+      <ul class="headerMobile__elements">
+        <li class="headerMobile__element">
+          <img src="../assets/home-run.svg" alt="HomeSvgIcon" />
+          <a class="active" href="home.html">Home</a>
+        </li>
+        <li class="headerMobile__element">
+          <img src="../assets/book.svg" alt="HomeSvgIcon" />
+          <a href="anims.html">Anime</a>
+        </li>
+        <li class="headerMobile__element">
+          <img src="../assets/heart.svg" alt="HomeSvgIcon" />
+          <a href="#">Favorite</a>
+        </li>
+        <li class="headerMobile__element">
+          <img src="../assets/user.svg" alt="HomeSvgIcon" />
+          <a href="user.html">Account</a>
+        </li>
+      </ul>
+    </nav>
+
  
  <img src="../assets/uploads/<?php $picture?>">
     <section class="user">
