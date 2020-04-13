@@ -1,0 +1,115 @@
+.user {
+  background-color: #080808af;
+  height: 80vh;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  overflow: hidden;
+  justify-content: space-between;
+
+  @include medium {
+    font-size: 16px;
+  }
+
+  &__nav {
+    padding-top: 20px;
+    background-color: black;
+    height: 60px;
+  }
+  &__categories {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__settings {
+    display: flex;
+    flex-direction: row;
+    width: 200%;
+    transition: all 1s ease-out;
+  }
+
+  &__setting {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  &__input {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%;
+    margin-bottom: 40px;
+  }
+
+  &__label {
+    color: var(--maincolor);
+    font-size: 16px;
+    font-weight: bold;
+
+    @include medium {
+      font-size: 20px;
+    }
+  }
+
+  &__enter {
+    color: white;
+    margin-top: 20px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid var(--maincolor);
+  }
+
+  &__modif {
+    position: absolute;
+    bottom: 8px;
+    left: 150px;
+    width: 10%;
+
+    @include medium {
+      width: auto;
+    }
+  }
+
+  &__delete {
+    text-align: center;
+    color: #cb2e2e;
+  }
+
+  &__logout {
+    display: flex;
+    text-decoration: underline;
+    justify-content: flex-end;
+    margin: 0 20px 20px 0px;
+  }
+
+  .active {
+    transition: all 1s;
+    &::after {
+      content: "";
+      padding-top: 15px;
+      border-bottom: 2px solid var(--maincolor);
+      display: block;
+      width: 100%;
+      height: 5px;
+      z-index: 2;
+    }
+  }
+
+
+
+  .change {
+    .user__label {
+      color: red;
+    }
+
+    .user__enter {
+      border-bottom: 2px solid white;
+    }
+    .user__modif {
+      display: none;
+    }
+  }
+}
