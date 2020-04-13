@@ -13,7 +13,7 @@
 session_start();
  $dbh = new PDO('mysql:dbname=katana;host=127.0.0.1', 'root', '');
 
-
+ $result = 'SELECT * FROM member';
     
   $query = $dbh->prepare($result);
 
