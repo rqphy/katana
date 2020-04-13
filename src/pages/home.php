@@ -119,21 +119,33 @@
           <article class="heroMedium__episodes">
             <div class="heroMedium__episode">
               <h3 class="heroMedium__info">E 01</h3>
+              <img class="heroMedium__image" src="../assets/cover/brs_01.png" alt="" class="heroMedium__image">
+
             </div>
             <div class="heroMedium__episode">
               <h3 class="heroMedium__info">E 02</h3>
+              <img src="../assets/cover/brs_02.png" alt="" class="heroMedium__image">
+
             </div>
             <div class="heroMedium__episode">
               <h3 class="heroMedium__info">E 03</h3>
+              <img src="../assets/cover/brs_03.png" alt="" class="heroMedium__image">
+
             </div>
             <div class="heroMedium__episode">
               <h3 class="heroMedium__info">E 04</h3>
+              <img src="../assets/cover/brs_04.png" alt="" class="heroMedium__image">
+
             </div>
             <div class="heroMedium__episode">
               <h3 class="heroMedium__info">E 05</h3>
+              <img src="../assets/cover/brs_05.png" alt="" class="heroMedium__image">
+
             </div>
             <div class="heroMedium__episode">
               <h3 class="heroMedium__info">E 06</h3>
+              <img src="../assets/cover/brs_01.png" alt="" class="heroMedium__image">
+
             </div>
           </article>
         </div>
@@ -212,7 +224,7 @@
         </div>
         <div class="videosContainer__element">
           <img
-            src="../assets/cover/foodwars.png"
+            src="../assets/cover/91days.png"
             alt=""
             class="videosContainer__cover"
           />
@@ -233,14 +245,14 @@
             </svg>
 
             <div class="videosContainer__infos">
-              <p class="videosContainer__name">Food Wars</p>
+              <p class="videosContainer__name">91Days</p>
               <p class="videosContainer__season">S03EP25</p>
             </div>
           </div>
         </div>
         <div class="videosContainer__element">
           <img
-            src="../assets/cover/foodwars.png"
+            src="../assets/cover/acr.png"
             alt=""
             class="videosContainer__cover"
           />
@@ -261,14 +273,14 @@
             </svg>
 
             <div class="videosContainer__infos">
-              <p class="videosContainer__name">Food Wars</p>
+              <p class="videosContainer__name">Assassination Class..</p>
               <p class="videosContainer__season">S03EP25</p>
             </div>
           </div>
         </div>
         <div class="videosContainer__element">
           <img
-            src="../assets/cover/foodwars.png"
+            src="../assets/cover/ahurinosoma.png"
             alt=""
             class="videosContainer__cover"
           />
@@ -289,14 +301,14 @@
             </svg>
 
             <div class="videosContainer__infos">
-              <p class="videosContainer__name">Food Wars</p>
+              <p class="videosContainer__name">Ahuri no soma</p>
               <p class="videosContainer__season">S03EP25</p>
             </div>
           </div>
         </div>
         <div class="videosContainer__element">
           <img
-            src="../assets/cover/foodwars.png"
+            src="../assets/cover/baki.png"
             alt=""
             class="videosContainer__cover"
           />
@@ -317,7 +329,7 @@
             </svg>
 
             <div class="videosContainer__infos">
-              <p class="videosContainer__name">Food Wars</p>
+              <p class="videosContainer__name">Baki</p>
               <p class="videosContainer__season">S03EP25</p>
             </div>
           </div>
@@ -555,7 +567,7 @@
       <div class="videosContainer__elements">
         <div class="videosContainer__element">
           <img
-            src="../assets/cover/foodwars.png"
+            src="../assets/cover/jojo.png"
             alt=""
             class="videosContainer__cover"
           />
@@ -576,14 +588,14 @@
             </svg>
 
             <div class="videosContainer__infos">
-              <p class="videosContainer__name">Food Wars</p>
+              <p class="videosContainer__name">Jojo's</p>
               <p class="videosContainer__season">S03EP25</p>
             </div>
           </div>
         </div>
         <div class="videosContainer__element">
           <img
-            src="../assets/cover/foodwars.png"
+            src="../assets/cover/fairytail.png"
             alt=""
             class="videosContainer__cover"
           />
@@ -604,14 +616,14 @@
             </svg>
 
             <div class="videosContainer__infos">
-              <p class="videosContainer__name">Food Wars</p>
+              <p class="videosContainer__name">Fairy Tail</p>
               <p class="videosContainer__season">S03EP25</p>
             </div>
           </div>
         </div>
         <div class="videosContainer__element">
           <img
-            src="../assets/cover/foodwars.png"
+            src="../assets/cover/onepiece.png"
             alt=""
             class="videosContainer__cover"
           />
@@ -632,14 +644,14 @@
             </svg>
 
             <div class="videosContainer__infos">
-              <p class="videosContainer__name">Food Wars</p>
+              <p class="videosContainer__name">One Piece</p>
               <p class="videosContainer__season">S03EP25</p>
             </div>
           </div>
         </div>
         <div class="videosContainer__element">
           <img
-            src="../assets/cover/foodwars.png"
+            src="../assets/cover/naruto.png"
             alt=""
             class="videosContainer__cover"
           />
@@ -660,14 +672,14 @@
             </svg>
 
             <div class="videosContainer__infos">
-              <p class="videosContainer__name">Food Wars</p>
+              <p class="videosContainer__name">Naruto</p>
               <p class="videosContainer__season">S03EP25</p>
             </div>
           </div>
         </div>
         <div class="videosContainer__element">
           <img
-            src="../assets/cover/foodwars.png"
+            src="../assets/cover/deathnote.png"
             alt=""
             class="videosContainer__cover"
           />
@@ -688,7 +700,7 @@
             </svg>
 
             <div class="videosContainer__infos">
-              <p class="videosContainer__name">Food Wars</p>
+              <p class="videosContainer__name">Death Note</p>
               <p class="videosContainer__season">S03EP25</p>
             </div>
           </div>
@@ -729,7 +741,7 @@
       <div class="videosContainer__elements">
         <div class="videosContainer__element">
           <img
-            src="../assets/cover/foodwars.png"
+            src="../assets/cover/aceofdiamond.png"
             alt=""
             class="videosContainer__cover"
           />
@@ -750,14 +762,14 @@
             </svg>
 
             <div class="videosContainer__infos">
-              <p class="videosContainer__name">Food Wars</p>
+              <p class="videosContainer__name">Ace of diamond</p>
               <p class="videosContainer__season">S03EP25</p>
             </div>
           </div>
         </div>
         <div class="videosContainer__element">
           <img
-            src="../assets/cover/foodwars.png"
+            src="../assets/cover/bakumatsu.png"
             alt=""
             class="videosContainer__cover"
           />
@@ -778,14 +790,14 @@
             </svg>
 
             <div class="videosContainer__infos">
-              <p class="videosContainer__name">Food Wars</p>
+              <p class="videosContainer__name">Bakumatsu</p>
               <p class="videosContainer__season">S03EP25</p>
             </div>
           </div>
         </div>
         <div class="videosContainer__element">
           <img
-            src="../assets/cover/foodwars.png"
+            src="../assets/cover/blackcover.png"
             alt=""
             class="videosContainer__cover"
           />
@@ -806,14 +818,14 @@
             </svg>
 
             <div class="videosContainer__infos">
-              <p class="videosContainer__name">Food Wars</p>
+              <p class="videosContainer__name">Black Cover</p>
               <p class="videosContainer__season">S03EP25</p>
             </div>
           </div>
         </div>
         <div class="videosContainer__element">
           <img
-            src="../assets/cover/foodwars.png"
+            src="../assets/cover/codegeass.png"
             alt=""
             class="videosContainer__cover"
           />
@@ -834,14 +846,14 @@
             </svg>
 
             <div class="videosContainer__infos">
-              <p class="videosContainer__name">Food Wars</p>
+              <p class="videosContainer__name">Code geass</p>
               <p class="videosContainer__season">S03EP25</p>
             </div>
           </div>
         </div>
         <div class="videosContainer__element">
           <img
-            src="../assets/cover/foodwars.png"
+            src="../assets/cover/drstone.png"
             alt=""
             class="videosContainer__cover"
           />
@@ -862,14 +874,14 @@
             </svg>
 
             <div class="videosContainer__infos">
-              <p class="videosContainer__name">Food Wars</p>
+              <p class="videosContainer__name">Dr Stone</p>
               <p class="videosContainer__season">S03EP25</p>
             </div>
           </div>
         </div>
         <div class="videosContainer__element">
           <img
-            src="../assets/cover/foodwars.png"
+            src="../assets/cover/gambling.png"
             alt=""
             class="videosContainer__cover"
           />
@@ -890,14 +902,14 @@
             </svg>
 
             <div class="videosContainer__infos">
-              <p class="videosContainer__name">Food Wars</p>
+              <p class="videosContainer__name">Gambling scho..</p>
               <p class="videosContainer__season">S03EP25</p>
             </div>
           </div>
         </div>
         <div class="videosContainer__element">
           <img
-            src="../assets/cover/foodwars.png"
+            src="../assets/cover/parasyte.png"
             alt=""
             class="videosContainer__cover"
           />
@@ -918,14 +930,14 @@
             </svg>
 
             <div class="videosContainer__infos">
-              <p class="videosContainer__name">Food Wars</p>
+              <p class="videosContainer__name">Parasyte</p>
               <p class="videosContainer__season">S03EP25</p>
             </div>
           </div>
         </div>
         <div class="videosContainer__element">
           <img
-            src="../assets/cover/foodwars.png"
+            src="../assets/cover/psychopass.png"
             alt=""
             class="videosContainer__cover"
           />
@@ -946,7 +958,7 @@
             </svg>
 
             <div class="videosContainer__infos">
-              <p class="videosContainer__name">Food Wars</p>
+              <p class="videosContainer__name">Psychopass</p>
               <p class="videosContainer__season">S03EP25</p>
             </div>
           </div>
@@ -1266,7 +1278,7 @@
         </div>
         <div class="videosContainer__element">
           <img
-            src="../assets/cover/foodwars.png"
+            src="../assets/cover/hxh.png"
             alt=""
             class="videosContainer__cover"
           />
@@ -1287,14 +1299,14 @@
             </svg>
 
             <div class="videosContainer__infos">
-              <p class="videosContainer__name">Food Wars</p>
+              <p class="videosContainer__name">Hunter x Hunt..</p>
               <p class="videosContainer__season">S03EP25</p>
             </div>
           </div>
         </div>
         <div class="videosContainer__element">
           <img
-            src="../assets/cover/foodwars.png"
+            src="../assets/cover/sao.png"
             alt=""
             class="videosContainer__cover"
           />
@@ -1315,14 +1327,14 @@
             </svg>
 
             <div class="videosContainer__infos">
-              <p class="videosContainer__name">Food Wars</p>
+              <p class="videosContainer__name">Sword art o..</p>
               <p class="videosContainer__season">S03EP25</p>
             </div>
           </div>
         </div>
         <div class="videosContainer__element">
           <img
-            src="../assets/cover/foodwars.png"
+            src="../assets/cover/yourlieinapril.png"
             alt=""
             class="videosContainer__cover"
           />
@@ -1343,14 +1355,14 @@
             </svg>
 
             <div class="videosContainer__infos">
-              <p class="videosContainer__name">Food Wars</p>
+              <p class="videosContainer__name">Your lie in ap..</p>
               <p class="videosContainer__season">S03EP25</p>
             </div>
           </div>
         </div>
         <div class="videosContainer__element">
           <img
-            src="../assets/cover/foodwars.png"
+            src="../assets/cover/yurionice.png"
             alt=""
             class="videosContainer__cover"
           />
@@ -1371,7 +1383,7 @@
             </svg>
 
             <div class="videosContainer__infos">
-              <p class="videosContainer__name">Food Wars</p>
+              <p class="videosContainer__name">Yuri on ice</p>
               <p class="videosContainer__season">S03EP25</p>
             </div>
           </div>
