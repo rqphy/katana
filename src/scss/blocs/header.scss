@@ -11,7 +11,7 @@
     display: flex;
     justify-content: space-around;
     padding: 14px 0px;
-  } 
+  }
   .headerMobile__element {
     display: flex;
     flex-direction: column;
@@ -23,7 +23,7 @@
       padding-top: 6px;
       color: rgb(150, 155, 210);
     }
-    .active{
+    .active {
       color: white;
       font-weight: 500;
     }
@@ -69,13 +69,14 @@
     height: 40px;
     background-color: var(--maincolor);
     border-radius: 100%;
+    border: 2px solid var(--maincolor);
   }
   .element__logo {
     font-family: "Righteous", cursive;
     color: var(--maincolor);
     font-size: 28px;
   }
-  .header__search{
+  .header__search {
     margin-top: 10.5px;
   }
 }

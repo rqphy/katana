@@ -94,7 +94,7 @@ $dbh = new PDO('mysql:dbname=katana;host=127.0.0.1', 'root', '');
         </ul>
         <ul class="header__element">
           <li><img class="header__search"src="../assets/search.svg" alt="IconSearch" /></li>
-          <li> <div class="profil">    <img src='../assets/uploads/<?= $picture ?>' ></div></li>
+          <li> <a href="user"><img class="profil" src='../assets/uploads/<?= $picture ?>' ></a></li>
           
         </ul>
       </div>

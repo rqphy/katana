@@ -21,6 +21,17 @@
      
  ?>
   <body class="homeBody">
+
+  <?php 
+   $query = $dbh->prepare('SELECT picture FROM member WHERE email=:email');
+  //  $query->bindValue(":email", $_SESSION['email']);
+   $query->execute(array(
+     "email"=>$_SESSION['email'],
+   ));
+   $data = $query->fetch();
+  $picture= $data['picture'];
+?>
+
  
     <nav class="header">
       <div class="header__elements">
@@ -35,9 +46,7 @@
         </ul>
         <ul class="header__element">
           <li><img class="header__search"src="../assets/search.svg" alt="IconSearch" /></li>
-          <li>
-            <a href="user.php"><div class="profil"></div></a>
-          </li>
+          <li> <a href="user.php"><img class="profil" src='../assets/uploads/<?= $picture ?>' ></a></li>
         </ul>
       </div>
     </nav>
@@ -110,28 +119,21 @@
           <article class="heroMedium__episodes">
             <div class="heroMedium__episode">
               <h3 class="heroMedium__info">E 01</h3>
-              <img src="../assets/cover/brs_01.png" alt="" class="heroMedium__image">
             </div>
             <div class="heroMedium__episode">
               <h3 class="heroMedium__info">E 02</h3>
-              <img src="../assets/cover/brs_02.png" alt="" class="heroMedium__image">
             </div>
             <div class="heroMedium__episode">
               <h3 class="heroMedium__info">E 03</h3>
-              <img src="../assets/cover/brs_03.png" alt="" class="heroMedium__image">
             </div>
             <div class="heroMedium__episode">
               <h3 class="heroMedium__info">E 04</h3>
-              <img src="../assets/cover/brs_04.png" alt="" class="heroMedium__image">
             </div>
             <div class="heroMedium__episode">
               <h3 class="heroMedium__info">E 05</h3>
-              <img src="../assets/cover/brs_03.png" alt="" class="heroMedium__image">
             </div>
             <div class="heroMedium__episode">
               <h3 class="heroMedium__info">E 06</h3>
-              <img src="../assets/cover/brs_03.png" alt="" class="heroMedium__image">
-
             </div>
           </article>
         </div>
@@ -210,7 +212,7 @@
         </div>
         <div class="videosContainer__element">
           <img
-            src="../assets/cover/codegeass.png"
+            src="../assets/cover/foodwars.png"
             alt=""
             class="videosContainer__cover"
           />
@@ -231,14 +233,14 @@
             </svg>
 
             <div class="videosContainer__infos">
-              <p class="videosContainer__name">Code geass</p>
+              <p class="videosContainer__name">Food Wars</p>
               <p class="videosContainer__season">S03EP25</p>
             </div>
           </div>
         </div>
         <div class="videosContainer__element">
           <img
-            src="../assets/cover/allout.png"
+            src="../assets/cover/foodwars.png"
             alt=""
             class="videosContainer__cover"
           />
@@ -259,14 +261,14 @@
             </svg>
 
             <div class="videosContainer__infos">
-              <p class="videosContainer__name">All Out</p>
+              <p class="videosContainer__name">Food Wars</p>
               <p class="videosContainer__season">S03EP25</p>
             </div>
           </div>
         </div>
         <div class="videosContainer__element">
           <img
-            src="../assets/cover/91days.png"
+            src="../assets/cover/foodwars.png"
             alt=""
             class="videosContainer__cover"
           />
@@ -287,14 +289,14 @@
             </svg>
 
             <div class="videosContainer__infos">
-              <p class="videosContainer__name">91 days</p>
+              <p class="videosContainer__name">Food Wars</p>
               <p class="videosContainer__season">S03EP25</p>
             </div>
           </div>
         </div>
         <div class="videosContainer__element">
           <img
-            src="../assets/cover/ahurinosoma.png"
+            src="../assets/cover/foodwars.png"
             alt=""
             class="videosContainer__cover"
           />
@@ -315,7 +317,7 @@
             </svg>
 
             <div class="videosContainer__infos">
-              <p class="videosContainer__name">Ahuri no soma</p>
+              <p class="videosContainer__name">Food Wars</p>
               <p class="videosContainer__season">S03EP25</p>
             </div>
           </div>

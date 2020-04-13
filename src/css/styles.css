@@ -207,7 +207,8 @@ a {
     width: 40px;
     height: 40px;
     background-color: var(--maincolor);
-    border-radius: 100%; }
+    border-radius: 100%;
+    border: 2px solid var(--maincolor); }
   .header .element__logo {
     font-family: "Righteous", cursive;
     color: var(--maincolor);
