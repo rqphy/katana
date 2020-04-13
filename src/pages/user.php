@@ -34,7 +34,7 @@ $dbh = new PDO('mysql:dbname=katana;host=127.0.0.1', 'root', '');
 
     $request->execute([
       md5($_POST['password']),
-      $_SESSION['email']
+      $_SESSION['email']  
     ]); 
     printf('cool');
   
@@ -69,10 +69,17 @@ $dbh = new PDO('mysql:dbname=katana;host=127.0.0.1', 'root', '');
    } else{
        echo "There was an error uploading the file, please try again!";
    }
-   $picture = $_FILES['uploaded_file'];
-   echo  $picture;
  }
  ?>
+ <?php 
+   $query = $dbh->prepare('SELECT picture FROM member WHERE email=:email');
+  //  $query->bindValue(":email", $_SESSION['email']);
+   $query->execute(array(
+     "email"=>$_SESSION['email'],
+   ));
+   $data = $query->fetch();
+  $picture= $data['picture'];
+?>
 
 <nav class="header">
       <div class="header__elements">
@@ -87,7 +94,8 @@ $dbh = new PDO('mysql:dbname=katana;host=127.0.0.1', 'root', '');
         </ul>
         <ul class="header__element">
           <li><img class="header__search"src="../assets/search.svg" alt="IconSearch" /></li>
-          <li> <div class="profil"></div></li>
+          <li> <div class="profil">    <img src='../assets/uploads/<?= $picture ?>' ></div></li>
+          
         </ul>
       </div>
     </nav>
@@ -112,8 +120,6 @@ $dbh = new PDO('mysql:dbname=katana;host=127.0.0.1', 'root', '');
       </ul>
     </nav>
 
- 
- <img src="../assets/uploads/<?php $picture?>">
     <section class="user">
       <nav class="user__nav">
         <ul class="user__categories">
@@ -126,7 +132,7 @@ $dbh = new PDO('mysql:dbname=katana;host=127.0.0.1', 'root', '');
           <div class="user__account">
             <form class="user__form" method="POST" enctype="multipart/form-data" action="user.php">
               <!-- <div class="user__input">
-                <label class="user__label" for="username">Username</label>
+                <label class="user__label" for="username">Username</label> 
                 <input name="username" class="user__enter" value="username" type="text" readonly />
                 <img src="../assets/svg/pencil.png" alt="modif" class="user__modif" />
               </div> -->
