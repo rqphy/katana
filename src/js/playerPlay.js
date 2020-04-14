@@ -1,7 +1,6 @@
 const $play = document.querySelector(".controller__play");
 const $playing = document.querySelector(".controller__playing");
 const $pausing = document.querySelector(".controller__pausing");
-const $video = document.querySelector(".player__video");
 
 // recup video
 

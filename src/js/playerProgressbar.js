@@ -1,8 +1,7 @@
 const $progressBar = document.querySelector(".controller__progressBar");
 const $bouboule = document.querySelector(".controller__bouboule");
 const $totalBar = document.querySelector(".controller__timeBar");
-const $video = document.querySelector(".player__video");
-const $controller = document.querySelector(".controller");
+
 // Time
 
 const $currentTime = document.querySelector(".controller__currentTime");

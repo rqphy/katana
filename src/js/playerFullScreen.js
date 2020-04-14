@@ -1,6 +1,5 @@
 const $fulls = document.querySelector(".controller__fullscreen");
 const $video = document.querySelector(".player__video");
-const $player = document.querySelector(".player");
 
 $fulls.addEventListener("click", () => {
   !document.fullscreenElement ? openFullscreen($player) : exitFullscreen($player);
