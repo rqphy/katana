@@ -129,14 +129,14 @@ $dbh = new PDO('mysql:dbname=katana;host=127.0.0.1', 'root', '');
       <section class="user__settings">
         <article class="user__setting">
           <div class="user__account">
-           <!-- <div class="user__picture"> 
-                <img  src='../assets/uploads/ <? // $picture ?>'>
-             </div>   -->
+     
+                <img class="user__picture" src='../assets/uploads/<?= $picture ?>'>
+        
             <form class="user__form" method="POST" enctype="multipart/form-data" action="user.php">
   
               <div class="user__files">
-                <input class="user__file" type="file" name="uploaded_file" id="fileToUpload"> 
-                <input type="submit" name="submit2">
+                <input class="user__file" type="file" name="uploaded_file" value="Choose file" id="fileToUpload"> 
+                <input class="user__submit2" value="I want to use this picture" type="submit" name="submit2">
               </div>
               <div class="user__input">
                 <label class="user__label" for="email">Email</label>
@@ -161,7 +161,7 @@ $dbh = new PDO('mysql:dbname=katana;host=127.0.0.1', 'root', '');
                 />
                 <img src="../assets/svg/pencil.png" alt="modif" class="user__modif" />
               </div>
-              <input class="user__submit" type="submit" name="submit">
+              <input class="user__submit" value="Submit" type="submit" name="submit">
             </form>
           </div>
         </article>

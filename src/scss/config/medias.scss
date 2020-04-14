@@ -14,3 +14,15 @@
     @content;
   }
 }
+
+@mixin landingMedium {
+  @media (min-width: 760px) {
+    @content;
+  }
+}
+
+@mixin landingLarge {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}

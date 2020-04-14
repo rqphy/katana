@@ -1,0 +1,219 @@
+.landingHero {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../assets/k_bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  margin-bottom: 30px;
+
+  @include landingMedium {
+    justify-content: center;
+    height: 90vh;
+  }
+
+  @include landingLarge {
+    height: 94vh;
+  }
+
+  &__signIn {
+    display: none;
+
+    @include landingMedium {
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+      width: 120px;
+      font-size: 14px;
+      font-family: "Roboto", sans-serif;
+      font-weight: 700;
+      border: none;
+      color: var(--background);
+      background: var(--maincolor);
+      border-radius: 5px;
+      text-transform: uppercase;
+      position: absolute;
+      right: 3%;
+      top: 3%;
+    }
+  }
+
+  &__container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    @include landingMedium {
+      height: 45%;
+      width: 80%;
+      display: grid;
+      grid-template-columns: minmax(280px, 2fr) 3fr;
+      grid-template-rows: repeat(2, 1fr);
+      grid-gap: 40px;
+      grid-template-areas:
+        "texts imgs"
+        "cta imgs";
+    }
+
+    @include landingLarge {
+      height: 55%;
+    }
+  }
+
+  &__texts {
+    text-align: center;
+
+    @include landingMedium {
+      grid-area: texts;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      text-align: left;
+    }
+  }
+
+  &__subtitle {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--opacitydark);
+
+    @include landingMedium {
+      font-size: 27px;
+    }
+
+    @include landingLarge {
+      font-size: 30px;
+    }
+  }
+
+  &__title {
+    font-family: "Righteous", cursive;
+    font-size: 47px;
+    color: var(--maincolor);
+
+    @include landingMedium {
+      font-size: 76px;
+    }
+
+    @include landingLarge {
+      font-size: 110px;
+    }
+  }
+
+  &__imgs {
+    height: 25%;
+    width: 80%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    @include landingMedium {
+      grid-area: imgs;
+      max-width: none;
+      height: 75%;
+      width: 100%;
+    }
+  }
+
+  &__img {
+    height: 95%;
+
+    &:nth-child(2) {
+      height: 90%;
+      margin-left: -10%;
+
+      @include landingMedium {
+        margin-left: -20px;
+      }
+    }
+
+    &:nth-child(1) {
+      height: 80%;
+      margin-left: -10%;
+      @include landingMedium {
+        margin-left: -20px;
+      }
+    }
+  }
+
+  &__cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    max-width: 300px;
+    font-family: "Roboto", sans-serif;
+
+    @include landingMedium {
+      grid-area: cta;
+      max-width: none;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  &__signUp {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 12px;
+    @include landingMedium {
+      font-size: 14px;
+      height: 50px;
+    }
+  }
+
+  &__email {
+    height: 100%;
+    width: 70%;
+    background: var(--inputbg);
+    color: var(--neutragrey);
+    border-radius: 5px;
+    border: none;
+    padding-left: 15px;
+  }
+
+  &__submit {
+    margin-left: -5%;
+    height: 100%;
+    width: 36%;
+    border: none;
+    border-radius: 5px;
+    background: var(--maincolor);
+    font-weight: bold;
+    color: var(--background);
+
+    @include landingMedium {
+      margin-left: -10px;
+      cursor: pointer;
+    }
+  }
+
+  &__login {
+    margin-top: 20px;
+    font-size: 12px;
+    text-decoration: underline;
+
+    @include landingMedium {
+      font-size: 14px;
+    }
+  }
+}
