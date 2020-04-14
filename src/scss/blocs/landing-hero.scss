@@ -1,0 +1,101 @@
+.landingHero {
+  height: 100vh;
+  width: 100%;
+  background: darkgray;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  &__signIn {
+    display: none;
+  }
+
+  &__texts {
+    text-align: center;
+  }
+
+  &__subtitle {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--opacitydark);
+  }
+
+  &__title {
+    font-family: "Righteous", cursive;
+    font-size: 47px;
+    color: var(--maincolor);
+  }
+
+  &__imgs {
+    height: 30%;
+    width: 80%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  &__img {
+    height: 95%;
+
+    &:nth-child(2) {
+      height: 90%;
+      margin-left: -10%;
+    }
+
+    &:nth-child(1) {
+      height: 80%;
+      margin-left: -10%;
+    }
+  }
+
+  &__cta {
+    border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    max-width: 300px;
+    // height: 15%;
+    font-family: "Roboto", sans-serif;
+  }
+
+  &__signUp {
+    width: 100%;
+    // border: 1px solid red;
+    height: 40px;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  &__email {
+    height: 100%;
+    width: 70%;
+    background: var(--inputbg);
+    color: var(--neutragrey);
+    border-radius: 5px;
+  }
+
+  &__submit {
+    margin-left: -5%;
+    height: 100%;
+    width: 36%;
+    border: none;
+    border-radius: 5px;
+    background: var(--maincolor);
+    font-weight: bold;
+    font-size: 12px;
+    color: var(--background);
+  }
+
+  &__login {
+    margin-top: 20px;
+    font-size: 12px;
+    text-decoration: underline;
+  }
+}
