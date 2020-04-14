@@ -853,13 +853,14 @@ a {
     border-radius: 5px;
     display: none; }
   .controller__volumeBar::-webkit-slider-thumb, .controller__volumeBar::-moz-range-thumb {
-    appearance: none;
     border: none;
     border-radius: 50%;
     height: 14px;
     width: 14px;
     cursor: pointer;
-    background-color: var(--maincolor); }
+    background-color: var(--maincolor);
+    appearance: none;
+    -webkit-appearance: none; }
 
 .icon {
   cursor: pointer; }
@@ -897,11 +898,13 @@ a {
     display: flex;
     justify-content: center;
     width: 100%; }
+  .user__form {
+    display: flex;
+    flex-direction: column; }
   .user__input {
     position: relative;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     width: 80%;
     margin-bottom: 40px; }
   .user__label {
@@ -933,6 +936,9 @@ a {
     text-decoration: underline;
     justify-content: flex-end;
     margin: 0 20px 20px 0px; }
+  .user__submit {
+    display: none;
+    background-color: var(--maincolor); }
   .user .active {
     transition: all 1s; }
     .user .active::after {
@@ -943,12 +949,18 @@ a {
       width: 100%;
       height: 5px;
       z-index: 2; }
-  .user .change .user__label {
-    color: red; }
-  .user .change .user__enter {
-    border-bottom: 2px solid white; }
-  .user .change .user__modif {
-    display: none; }
+
+.change .user__label {
+  color: red; }
+
+.change .user__enter {
+  border-bottom: 2px solid white; }
+
+.change .user__modif {
+  display: none; }
+
+.change .user__submit {
+  display: block; }
 
 img {
   max-width: 100%; }
