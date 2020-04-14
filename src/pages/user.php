@@ -80,7 +80,7 @@ $dbh = new PDO('mysql:dbname=katana;host=127.0.0.1', 'root', '');
   $picture= $data['picture'];
 ?>
 
-<nav class="header">
+<nav class="header header--transparent">
       <div class="header__elements">
         <ul class="header__element">
           <li class="element__logo">katana</li>

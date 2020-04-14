@@ -185,6 +185,8 @@ a {
   height: 60px;
   background-color: var(--background);
   color: white; }
+  .header--transparent {
+    background-color: transparent; }
   .header .header__elements,
   .header .header__element {
     display: flex; }
@@ -193,13 +195,17 @@ a {
     align-items: center;
     margin: 0px 25px;
     height: 100%; }
+  .header .header__element a:hover {
+    color: var(--maincolor);
+    font-weight: bold; }
   .header .header__element:nth-child(2) {
     font-size: 16px;
-    width: 75%;
+    width: 50%;
     justify-content: space-around; }
   .header .header__element:nth-child(3) {
     width: 10%;
-    justify-content: space-between; }
+    justify-content: space-between;
+    margin-right: 15px; }
   .header .header__element .active {
     color: var(--maincolor);
     font-weight: bold; }
