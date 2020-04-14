@@ -78,7 +78,7 @@
             fill="rgba(246,246,246,1)"
           />
         </svg>
-        <div class="heroMobile__playbutton"></div>
+        <a href="player.html"><div class="heroMobile__playbutton"></div></a>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
@@ -96,7 +96,7 @@
     </section>
     <section class="heroMedium">
       <article class="heroMedium__container">
-        <div class="heroMedium__playbutton"></div>
+      <a href="player.html"><div class="heroMedium__playbutton"></div></a>
         <img src="../assets/herogif.gif" class="heroMedium__video">
       </article>
       <article class="heroMedium__content">
