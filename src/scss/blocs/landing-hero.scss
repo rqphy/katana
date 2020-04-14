@@ -1,7 +1,7 @@
 .landingHero {
   height: 100vh;
   width: 100%;
-  background-image: url("../assets/logbackground2.png");
+  background-image: url("../assets/k_bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -26,13 +26,16 @@
 
     @include landingMedium {
       cursor: pointer;
-      display: block;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       height: 50px;
       width: 120px;
       font-size: 14px;
       font-family: "Roboto", sans-serif;
       font-weight: 700;
       border: none;
+      color: var(--background);
       background: var(--maincolor);
       border-radius: 5px;
       text-transform: uppercase;
