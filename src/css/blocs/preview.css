@@ -1,0 +1,12 @@
+.preview {
+  margin-top: 100px;
+  position: relative; }
+  .preview__banner {
+    display: block;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto; }
+  .preview__title {
+    position: absolute;
+    top: 0;
+    left: 600px; }

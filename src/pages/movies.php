@@ -7,11 +7,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Katana - Home</title>
-    <link rel="stylesheet" href="../scss/styles.scss" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="../scss/styles.scss" /> -->
     <link rel="stylesheet" href="../css/styles.css" />
   </head>
-
 
   <?php 
   session_start();
@@ -30,18 +29,16 @@
    $data = $query->fetch();
   $picture= $data['picture'];
 ?>
-
- 
     <nav class="header">
       <div class="header__elements">
         <ul class="header__element">
           <li class="element__logo">katana</li>
         </ul>
         <ul class="header__element">
-          <li> <a href="home.php" class="active">HOME</a></li>
-          <li> <a href="anims.php">ANIMES</a></li>
-          <li> <a href="movies.php">ANIMATED FILM</a></li>
-          <li> <a href="#">FAVORITES</a></li>
+          <li><a href="home.php">HOME</a></li>
+          <li><a href="anims.php">ANIMES</a></li>
+          <li><a href="movies.php" class="active">ANIMATED FILM</a></li>
+          <li><a href="#">FAVORITES</a></li>
         </ul>
         <ul class="header__element">
           <li><img class="header__search"src="../assets/search.svg" alt="IconSearch" /></li>
@@ -49,113 +46,11 @@
         </ul>
       </div>
     </nav>
-    <section class="heroMobile">
-      <h1 class="heroMobile__title">Katana</h1>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        width="24"
-        height="24"
-        class="heroMobile__search"
-      >
-        <path fill="none" d="M0 0h24v24H0z" />
-        <path
-          d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"
-          fill="rgba(246,246,246,1)"
-        />
-      </svg>
-      <div class="heroMobile__container">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          width="24"
-          height="24"
-          class="heroMobile__icon"
-        >
-          <path fill="none" d="M0 0h24v24H0z" />
-          <path
-            d="M12 22l-9.192-9.192c-2.18-2.568-2.066-6.42.353-8.84A6.5 6.5 0 0 1 12 3.64a6.5 6.5 0 0 1 9.179 9.154L12 22zm7.662-10.509a4.5 4.5 0 0 0-6.355-6.337L12 6.282l-1.307-1.128a4.5 4.5 0 0 0-6.355 6.337l.114.132L12 19.172l7.548-7.549.114-.132z"
-            fill="rgba(246,246,246,1)"
-          />
-        </svg>
-        <div class="heroMobile__playbutton"></div>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          width="24"
-          height="24"
-          class="heroMobile__icon"
-        >
-          <path fill="none" d="M0 0h24v24H0z" />
-          <path
-            d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM11 7h2v2h-2V7zm0 4h2v6h-2v-6z"
-            fill="rgba(246,246,246,1)"
-          />
-        </svg>
-      </div>
-    </section>
-    <section class="heroMedium">
-      <article class="heroMedium__container">
-        <div class="heroMedium__playbutton"></div>
-        <video src="#" class="heroMedium__video"></video>
-      </article>
-      <article class="heroMedium__content">
-        <h3 class="heroMedium__type">Anime - Fantasy</h3>
-        <h2 class="heroMedium__title">BLACK ROCK SHOOTER</h2>
-        <div class="heroMedium__infos">
-          <p class="heroMedium__number">Episodes : 8</p>
-          <p class="heroMedium__favourite">Already in my favourites</p>
-        </div>
-        <p class="heroMedium__description">
-          While each piece of media takes place in its own universe, they each
-          focus around Black Rock Shooter, a mysterious black haired girl who
-          possesses a burning blue eye.
-        </p>
-      </article>
-      <div class="heroMedium__caroussel">
-        <div class="heroMedium__arrow heroMedium__arrow--left"><</div>
-        <div class="heroMedium__carousselElements">
-          <article class="heroMedium__episodes">
-            <div class="heroMedium__episode">
-              <h3 class="heroMedium__info">E 01</h3>
-              <img class="heroMedium__image" src="../assets/cover/brs_01.png" alt="" class="heroMedium__image">
-
-            </div>
-            <div class="heroMedium__episode">
-              <h3 class="heroMedium__info">E 02</h3>
-              <img src="../assets/cover/brs_02.png" alt="" class="heroMedium__image">
-
-            </div>
-            <div class="heroMedium__episode">
-              <h3 class="heroMedium__info">E 03</h3>
-              <img src="../assets/cover/brs_03.png" alt="" class="heroMedium__image">
-
-            </div>
-            <div class="heroMedium__episode">
-              <h3 class="heroMedium__info">E 04</h3>
-              <img src="../assets/cover/brs_04.png" alt="" class="heroMedium__image">
-
-            </div>
-            <div class="heroMedium__episode">
-              <h3 class="heroMedium__info">E 05</h3>
-              <img src="../assets/cover/brs_05.png" alt="" class="heroMedium__image">
-
-            </div>
-            <div class="heroMedium__episode">
-              <h3 class="heroMedium__info">E 06</h3>
-              <img src="../assets/cover/brs_01.png" alt="" class="heroMedium__image">
-
-            </div>
-          </article>
-        </div>
-        <div class="heroMedium__arrow heroMedium__arrow--right">></div>
-      </div>
-    </section>
     <nav class="headerMobile">
       <ul class="headerMobile__elements">
         <li class="headerMobile__element">
           <img src="../assets/home-run.svg" alt="HomeSvgIcon" />
-          <a class="active" href="home.php">Home</a>
+          <a href="home.php">Home</a>
         </li>
         <li class="headerMobile__element">
           <img src="../assets/book.svg" alt="HomeSvgIcon" />
@@ -171,7 +66,6 @@
         </li>
       </ul>
     </nav>
-
     <section class="videosContainer videosContainer--history">
       <h1 class="videosContainer__title">MY HISTORY</h1>
       <div class="videosContainer__arrow videosContainer__arrow--left"><</div>
@@ -562,7 +456,7 @@
     </section>
 
     <section class="videosContainer">
-      <h1 class="videosContainer__title">TOP ANIME</h1>
+      <h1 class="videosContainer__title">TOP MOVIES</h1>
       <div class="videosContainer__elements">
         <div class="videosContainer__element">
           <img
@@ -1245,7 +1139,7 @@
       </div>
     </section>
     <section class="videosContainer">
-      <h1 class="videosContainer__title">TOP ANIME</h1>
+      <h1 class="videosContainer__title">ACTION</h1>
       <div class="videosContainer__elements">
         <div class="videosContainer__element">
           <img
@@ -1865,15 +1759,15 @@
         </div>
       </div>
     </section>
+
     <script type="text/javascript" src="../js/caroussel.js"></script>
- <?php
+    <?php
       } 
       else {
-        header('Location: /index.html');
+       header('Location: /index.html');
       }
  
  ?>
-  
-    
   </body>
+
 </html>
