@@ -39,6 +39,10 @@
   height: 60px;
   background-color: var(--background);
   color: white;
+
+  &--transparent {
+    background-color: transparent;
+  }
   .header__elements,
   .header__element {
     display: flex;
@@ -50,14 +54,22 @@
     height: 100%;
   }
   .header__element {
+    a {
+      &:hover {
+        color: var(--maincolor);
+        font-weight: bold;
+      }
+    }
+
     &:nth-child(2) {
       font-size: 16px;
-      width: 75%;
+      width: 50%;
       justify-content: space-around;
     }
     &:nth-child(3) {
       width: 10%;
       justify-content: space-between;
+      margin-right: 15px;
     }
     .active {
       color: var(--maincolor);
