@@ -155,13 +155,14 @@
 
   &__volumeBar::-webkit-slider-thumb,
   &__volumeBar::-moz-range-thumb {
-    appearance: none;
     border: none;
     border-radius: 50%;
     height: 14px;
     width: 14px;
     cursor: pointer;
     background-color: var(--maincolor);
+    appearance: none;
+    -webkit-appearance: none;
   }
 }
 
