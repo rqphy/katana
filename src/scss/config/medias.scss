@@ -14,3 +14,9 @@
     @content;
   }
 }
+
+@mixin landingMedium {
+  @media (min-width: 760px) {
+    @content;
+  }
+}
