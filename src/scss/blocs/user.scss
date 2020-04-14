@@ -1,5 +1,5 @@
 .user {
-  background-color: #080808af;
+  background-color: #08080862;
   height: 80vh;
   width: 95%;
   display: flex;
@@ -103,12 +103,18 @@
   }
 
   &__picture {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     background-color: var(--maincolor);
     border-radius: 100%;
     border: 2px solid var(--maincolor);
     border-radius: 50%;
+
+    @include medium {
+      border: 5px solid var(--maincolor);
+      width: 150px;
+      height: 150px;
+    }
   }
 
   &__submit2 {
