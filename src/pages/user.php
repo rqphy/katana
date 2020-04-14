@@ -8,12 +8,11 @@ $dbh = new PDO('mysql:dbname=katana;host=127.0.0.1', 'root', '');
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-
-    <link rel="stylesheet" href="../scss/styles.scss" />
+    <title>katana - <?php echo $_SESSION['email']?></title>
     <link rel="stylesheet" href="../css/styles.css" />
+
   </head>
-  <body class="container">
+  <body class="container"> 
   <?php 
 
 
@@ -94,7 +93,7 @@ $dbh = new PDO('mysql:dbname=katana;host=127.0.0.1', 'root', '');
         </ul>
         <ul class="header__element">
           <li><img class="header__search"src="../assets/search.svg" alt="IconSearch" /></li>
-          <li> <a href="user"><img class="profil" src='../assets/uploads/<?= $picture ?>' ></a></li>
+          <li> <a href="user.php"><img class="profil" src='../assets/uploads/<?= $picture ?>' ></a></li>
           
         </ul>
       </div>
@@ -130,12 +129,11 @@ $dbh = new PDO('mysql:dbname=katana;host=127.0.0.1', 'root', '');
       <section class="user__settings">
         <article class="user__setting">
           <div class="user__account">
+           <!-- <div class="user__picture"> 
+                <img  src='../assets/uploads/ <? // $picture ?>'>
+             </div>   -->
             <form class="user__form" method="POST" enctype="multipart/form-data" action="user.php">
-              <!-- <div class="user__input">
-                <label class="user__label" for="username">Username</label> 
-                <input name="username" class="user__enter" value="username" type="text" readonly />
-                <img src="../assets/svg/pencil.png" alt="modif" class="user__modif" />
-              </div> -->
+  
               <div class="user__files">
                 <input class="user__file" type="file" name="uploaded_file" id="fileToUpload"> 
                 <input type="submit" name="submit2">
@@ -163,7 +161,7 @@ $dbh = new PDO('mysql:dbname=katana;host=127.0.0.1', 'root', '');
                 />
                 <img src="../assets/svg/pencil.png" alt="modif" class="user__modif" />
               </div>
-              <input type="submit" name="submit">
+              <input class="user__submit" type="submit" name="submit">
             </form>
           </div>
         </article>
@@ -200,8 +198,8 @@ $dbh = new PDO('mysql:dbname=katana;host=127.0.0.1', 'root', '');
     <?php
       } 
       else {
-       // header('Location: /index.html')
-       printf('dhsksh');
+        header('Location: ../index.html');
+     
       }
  
  ?>
