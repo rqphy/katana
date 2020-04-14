@@ -16,6 +16,7 @@
     padding-top: 20px;
     background-color: black;
     height: 60px;
+    cursor: pointer;
   }
   &__categories {
     display: flex;
@@ -35,8 +36,10 @@
     width: 100%;
   }
 
-  &__form {
+  &__account {
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
   }
 
@@ -69,8 +72,7 @@
   &__modif {
     position: absolute;
     bottom: 8px;
-    left: 150px;
-    width: 10%;
+    left: 200px;
 
     @include medium {
       width: auto;
@@ -88,9 +90,45 @@
     justify-content: flex-end;
     margin: 0 20px 20px 0px;
   }
+
   &__submit {
-    display: none;
+    display: block;
+    border: none;
+    height: 25px;
+    color: var(--background);
+    width: 40%;
+    border-radius: 4px;
+    cursor: pointer;
     background-color: var(--maincolor);
+  }
+
+  &__picture {
+    width: 150px;
+    height: 150px;
+    background-color: var(--maincolor);
+    border-radius: 100%;
+    border: 2px solid var(--maincolor);
+    border-radius: 50%;
+  }
+
+  &__submit2 {
+    width: 200px;
+    background-color: transparent;
+    text-decoration: underline;
+    color: var(--neutralwhite);
+    border: none;
+    margin-top: 10px;
+  }
+
+  &__files {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+  &__file {
+    display: flex;
+    flex-direction: column;
   }
   .active {
     transition: all 1s;
@@ -116,9 +154,5 @@
   }
   .user__modif {
     display: none;
-  }
-
-  .user__submit {
-    display: block;
   }
 }

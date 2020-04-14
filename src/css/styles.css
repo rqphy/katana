@@ -891,7 +891,8 @@ a {
   .user__nav {
     padding-top: 20px;
     background-color: black;
-    height: 60px; }
+    height: 60px;
+    cursor: pointer; }
   .user__categories {
     display: flex;
     justify-content: space-around; }
@@ -904,8 +905,10 @@ a {
     display: flex;
     justify-content: center;
     width: 100%; }
-  .user__form {
+  .user__account {
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column; }
   .user__input {
     position: relative;
@@ -929,8 +932,7 @@ a {
   .user__modif {
     position: absolute;
     bottom: 8px;
-    left: 150px;
-    width: 10%; }
+    left: 200px; }
     @media (min-width: 667px) {
       .user__modif {
         width: auto; } }
@@ -943,8 +945,36 @@ a {
     justify-content: flex-end;
     margin: 0 20px 20px 0px; }
   .user__submit {
-    display: none;
+    display: block;
+    border: none;
+    height: 25px;
+    color: var(--background);
+    width: 40%;
+    border-radius: 4px;
+    cursor: pointer;
     background-color: var(--maincolor); }
+  .user__picture {
+    width: 150px;
+    height: 150px;
+    background-color: var(--maincolor);
+    border-radius: 100%;
+    border: 2px solid var(--maincolor);
+    border-radius: 50%; }
+  .user__submit2 {
+    width: 200px;
+    background-color: transparent;
+    text-decoration: underline;
+    color: var(--neutralwhite);
+    border: none;
+    margin-top: 10px; }
+  .user__files {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    margin-top: 40px; }
+  .user__file {
+    display: flex;
+    flex-direction: column; }
   .user .active {
     transition: all 1s; }
     .user .active::after {
@@ -964,9 +994,6 @@ a {
 
 .change .user__modif {
   display: none; }
-
-.change .user__submit {
-  display: block; }
 
 img {
   max-width: 100%; }
