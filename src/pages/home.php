@@ -98,7 +98,7 @@
     <section class="heroMedium">
       <article class="heroMedium__container">
         <div class="heroMedium__playbutton"></div>
-        <video src="#" class="heroMedium__video"></video>
+        <img src="../assets/herogif.gif" class="heroMedium__video">
       </article>
       <article class="heroMedium__content">
         <h3 class="heroMedium__type">Anime - Fantasy</h3>

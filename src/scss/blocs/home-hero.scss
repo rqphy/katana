@@ -66,16 +66,20 @@
   }
 
   &__video {
+    top: 80px;
     width: 100%;
+    position: relative;
     height: 60%;
+    z-index: -2;
   }
 
   &__playbutton {
+    cursor: pointer;
     background-image: url("../assets/play.svg");
     height: 70px;
     width: 70px;
     position: absolute;
-    top: calc(50% - 35px);
+    top: calc(50% - 10px);
     left: calc(50% - 35px);
   }
 
