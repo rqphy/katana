@@ -1,6 +1,5 @@
 const $backTen = document.querySelector(".controller__backTen");
 const $forTen = document.querySelector(".controller__forTen");
-const $video = document.querySelector(".player__video");
 
 $backTen.addEventListener("click", minusTen);
 
