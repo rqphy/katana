@@ -1027,13 +1027,16 @@ a {
     @media (min-width: 760px) {
       .landingHero__signIn {
         cursor: pointer;
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         height: 50px;
         width: 120px;
         font-size: 14px;
         font-family: "Roboto", sans-serif;
         font-weight: 700;
         border: none;
+        color: var(--background);
         background: var(--maincolor);
         border-radius: 5px;
         text-transform: uppercase;
