@@ -1,9 +1,12 @@
-# katana
-School project - video / movie platform
-<ul>
-  <li>Maëva WOLFF 🐉 </li>
-  <li>Nathan STAMPFLI</li>
-  <li>Raphael FERREIRA</li>
-  <li>Theo Rougier</li>
-  <li>Lina BLIDI </li>
-</ul>
+# ![enter image description here](https://zupimages.net/up/20/16/13mq.png)
+
+link: soon..
+
+## contributors :
+
+ - [Maëva WOLFF](https://github.com/MaevaWolff) 🐉
+ - [Nathan STAMPFLI](https://github.com/Nstampfli)
+ - [Raphael FERREIRA](https://github.com/rqphy) 
+ - [Theo ROUGIER](https://github.com/theorougier) 
+ - [Lina BLIDI]
+
